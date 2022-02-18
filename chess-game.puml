@@ -2,31 +2,10 @@
 'https://plantuml.com/class-diagram
 'https://plantuml.com/guide
 
-'abstract class AbstractList
-'abstract AbstractCollection
-'interface List
-'interface Collection
-'
-'List <|-- AbstractList
-'Collection <|-- AbstractCollection
-'
-'Collection <|- List
-'AbstractCollection <|- AbstractList
-'AbstractList <|-- ArrayList
-'
-'class ArrayList {
-'Object[] elementData
-'size()
-'}
-
-
-
 rectangle Chess-layer {
 
     together {
         rectangle {
-            Color -[hidden]> ChessPosition
-
             class ChessException {
                 + ChessException(String : msg) : void
             }
@@ -42,13 +21,15 @@ rectangle Chess-layer {
                 # toPosition() : Position
                 # fromPosition(position : Position) : ChessPosition
             }
+
+            Color -[hidden]> ChessPosition
         }
     }
 
     ChessException -[hidden]--> ChessMatch
-    ChessMatch --> ChessPiece
+    ChessMatch -[hidden]> ChessPiece
 
-    together k2 {
+    together {
         class ChessMatch {
             - turn : int
             - currentPlayer : Color
@@ -64,7 +45,7 @@ rectangle Chess-layer {
 
         ChessMatch -[hidden]-> ChessPiece
 
-        class ChessPiece extends Piece {
+        class ChessPiece {
             - color : Color
             - moveCount : int
             + getChessPosition() : ChessPosition
@@ -81,7 +62,6 @@ rectangle Chess-layer {
         class Rook extends ChessPiece
         King --> ChessMatch : 1 chessMatch
         Pawn --> ChessMatch : 1 chessMatch
-
     }
 }
 @enduml
