@@ -1,10 +1,10 @@
 @startuml
+!theme vibrant
 'https://plantuml.com/class-diagram
 'https://plantuml.com/guide
 
-rectangle Chess-layer {
-
-    together {
+rectangle {
+    rectangle "Chess layer" as chessLayer {
         rectangle {
             class ChessException {
                 + ChessException(String : msg) : void
@@ -22,46 +22,85 @@ rectangle Chess-layer {
                 # fromPosition(position : Position) : ChessPosition
             }
 
-            Color -[hidden]> ChessPosition
+            Color -r[hidden] ChessPosition
+        }
+
+        Color -d[hidden]- ChessPiece
+
+        together "x" as x{
+            class ChessMatch {
+                - turn : int
+                - currentPlayer : Color
+                - check : boolean
+                - checkMate : boolean
+                - enPassantVulnerable : ChessPiece
+                - promoted : chessPiece
+                + getPieces() : ChessPiece[][]
+                + possibleMoves(sourcePosition : ChessPosition) : boolean[][]
+                + performChessMove(sourcePosition : ChessPosition, targetPosition : ChessPosition) : ChessPosition
+                + replacePromotedPiece(type : String) :ChessPiece
+            }
+
+            ChessMatch -u[hidden]- ChessPiece
+
+            class ChessPiece {
+                - color : Color
+                - moveCount : int
+                + getChessPosition() : ChessPosition
+                # isThereOpponentPiece(position : Position) : boolean
+                # increaseMoveCount() : void
+                # decreaseMoveCount() : void
+            }
+
+            class King extends ChessPiece
+            class Bishop extends ChessPiece
+            class Knight extends ChessPiece
+            class Pawn extends ChessPiece
+            class Queen extends ChessPiece
+            class Rook extends ChessPiece
+            King --> ChessMatch : 1 chessMatch
+            Pawn --> ChessMatch : 1 chessMatch
         }
     }
 
-    ChessException -[hidden]--> ChessMatch
-    ChessMatch -[hidden]> ChessPiece
+        rectangle "Board layer" as boardLayer {
+            rectangle " " as r {
+                class BoardException {
+                    + BoardException(msg : String) : void
+                }
 
-    together {
-        class ChessMatch {
-            - turn : int
-            - currentPlayer : Color
-            - check : boolean
-            - checkMate : boolean
-            - enPassantVulnerable : ChessPiece
-            - promoted : chessPiece
-            + getPieces() : ChessPiece[][]
-            + possibleMoves(sourcePosition : ChessPosition) : boolean[][]
-            + performChessMove(sourcePosition : ChessPosition, targetPosition : ChessPosition) : ChessPosition
-            + replacePromotedPiece(type : String) :ChessPiece
+                class Position {
+                    - row : int
+                    - column : int
+                    + serValues(row : int, column : int) : void
+                }
+            }
+
+            together {
+                class Board {
+                    - rows : int
+                    - columns : int
+                    + piece(row : int, columns : int) : Piece
+                    + piece(position : Position) : Piece
+                    + placePiece(position : Position) : void
+                    + removePiece(position : Position) : Piece
+                    + positionExists(position : Position) : boolean
+                    + thereIsAPiece(position : Position) : boolean
+                }
+
+                Position -d[hidden]- Piece
+                Board "1 - board" -u- "* - pieces" Piece
+
+                class Piece {
+                    # position : Position
+                    + possibleMoves() : boolean[][]
+                    + (position : Position) : boolean
+                    + isThereAnyPossibleMove() : boolean
+                }
+            }
+            ChessPiece -[thickness=3]-|> Piece
+            ChessMatch *-r[thickness=5]-> Board
         }
-
-        ChessMatch -[hidden]-> ChessPiece
-
-        class ChessPiece {
-            - color : Color
-            - moveCount : int
-            + getChessPosition() : ChessPosition
-            # isThereOpponentPiece(position : Position) : boolean
-            # increaseMoveCount() : void
-            # decreaseMoveCount() : void
-        }
-
-        class King extends ChessPiece
-        class Bishop extends ChessPiece
-        class Knight extends ChessPiece
-        class Pawn extends ChessPiece
-        class Queen extends ChessPiece
-        class Rook extends ChessPiece
-        King --> ChessMatch : 1 chessMatch
-        Pawn --> ChessMatch : 1 chessMatch
-    }
+        chessLayer -[hidden]- boardLayer
 }
 @enduml

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="667.8px" preserveAspectRatio="none" style="width:1063px;height:667px;background:#FFFFFF;" version="1.1" viewBox="0 0 1063 667" width="1063.3px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="659.05" rx="2.45" ry="2.45" style="stroke:#000000;stroke-width:1.0499999999999998;" width="1054.2" x="4.9" y="4.9"/><!--MD5=[cf5c346e175552673dd6899d4b2ace5b]
+cluster chessLayer--><rect fill="#FFFFFF" height="614.25" rx="2.45" ry="2.45" style="stroke:#000000;stroke-width:1.0499999999999998;" width="550.9" x="27.3" y="27.3"/><text fill="#000000" font-family="sans-serif" font-size="9.8" font-weight="bold" lengthAdjust="spacing" textLength="63.7" x="270.9" y="37.7966">Chess layer</text><rect fill="#FFFFFF" height="91.7" rx="2.45" ry="2.45" style="stroke:#000000;stroke-width:1.0499999999999998;" width="500.5" x="49.7" y="63"/><!--MD5=[4fbb2de34ef8f4fac253a0393825e7c4]
+cluster x--><!--MD5=[bf5bc7dda213f516184843711fb06a5d]
+cluster boardLayer--><rect fill="#FFFFFF" height="449.05" rx="2.45" ry="2.45" style="stroke:#000000;stroke-width:1.0499999999999998;" width="430.5" x="606.2" y="183.4"/><text fill="#000000" font-family="sans-serif" font-size="9.8" font-weight="bold" lengthAdjust="spacing" textLength="64.4" x="789.25" y="193.8966">Board layer</text><!--MD5=[e3b72d301b965cbca9f58de8a3361392]
+cluster r--><rect fill="#FFFFFF" height="95.9" rx="2.45" ry="2.45" style="stroke:#000000;stroke-width:1.0499999999999998;" width="380.1" x="634.2" y="219.1"/><text fill="#000000" font-family="sans-serif" font-size="9.8" font-weight="bold" lengthAdjust="spacing" textLength="0" x="826" y="229.5966"/><!--MD5=[86f1693443f5bec12afcd9aa3eb277d9]
+class ChessPiece--><rect codeLine="45" fill="#FEFECE" height="87.3797" id="ChessPiece" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="222.6" x="191.1" y="229.95"/><ellipse cx="276.325" cy="241.15" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M278.0531,245.2625 Q277.6484,245.4812 277.2,245.5906 Q276.7516,245.7 276.2594,245.7 Q274.5094,245.7 273.5797,244.5297 Q272.6609,243.3594 272.6609,241.15 Q272.6609,238.9406 273.5797,237.7703 Q274.5094,236.6 276.2594,236.6 Q276.7516,236.6 277.2,236.7094 Q277.6594,236.8187 278.0531,237.0375 L278.0531,238.9953 Q277.6156,238.6016 277.2,238.4156 Q276.7844,238.2187 276.3469,238.2187 Q275.4062,238.2187 274.925,238.9625 Q274.4437,239.7062 274.4437,241.15 Q274.4437,242.6047 274.925,243.3484 Q275.4062,244.0812 276.3469,244.0812 Q276.7844,244.0812 277.2,243.8953 Q277.6156,243.7094 278.0531,243.3047 L278.0531,245.2625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="46.2" x="290.675" y="244.058">ChessPiece</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="191.8" x2="413" y1="252.35" y2="252.35"/><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="196.7" y="257.95"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="49" x="205.1" y="262.2973">color : Color</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="196.7" y="266.9133"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="63.7" x="205.1" y="271.2606">moveCount : int</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="191.8" x2="413" y1="275.8766" y2="275.8766"/><ellipse cx="198.8" cy="283.5766" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="135.8" x="205.1" y="285.8239">getChessPosition() : ChessPosition</text><polygon fill="#FFFF44" points="198.8,289.0398,201.6,291.8398,198.8,294.6398,196,291.8398" style="stroke:#B38D22;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="204.4" x="205.1" y="294.7872">isThereOpponentPiece(position : Position) : boolean</text><polygon fill="#FFFF44" points="198.8,298.0031,201.6,300.8031,198.8,303.6031,196,300.8031" style="stroke:#B38D22;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="108.5" x="205.1" y="303.7504">increaseMoveCount() : void</text><polygon fill="#FFFF44" points="198.8,306.9664,201.6,309.7664,198.8,312.5664,196,309.7664" style="stroke:#B38D22;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="111.3" x="205.1" y="312.7137">decreaseMoveCount() : void</text><!--MD5=[6423a2f9107360e9c9d54a840fb970b9]
+class ChessException--><rect codeLine="8" fill="#FEFECE" height="42.5633" id="ChessException" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="159.6" x="60.9" y="87.5"/><ellipse cx="104.475" cy="98.7" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M106.2031,102.8125 Q105.7984,103.0312 105.35,103.1406 Q104.9016,103.25 104.4094,103.25 Q102.6594,103.25 101.7297,102.0797 Q100.8109,100.9094 100.8109,98.7 Q100.8109,96.4906 101.7297,95.3203 Q102.6594,94.15 104.4094,94.15 Q104.9016,94.15 105.35,94.2594 Q105.8094,94.3687 106.2031,94.5875 L106.2031,96.5453 Q105.7656,96.1516 105.35,95.9656 Q104.9344,95.7687 104.4969,95.7687 Q103.5562,95.7687 103.075,96.5125 Q102.5937,97.2562 102.5937,98.7 Q102.5937,100.1547 103.075,100.8984 Q103.5562,101.6312 104.4969,101.6312 Q104.9344,101.6312 105.35,101.4453 Q105.7656,101.2594 106.2031,100.8547 L106.2031,102.8125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="66.5" x="118.825" y="101.608">ChessException</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="61.6" x2="219.8" y1="109.9" y2="109.9"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="61.6" x2="219.8" y1="115.5" y2="115.5"/><ellipse cx="68.6" cy="123.2" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="141.4" x="74.9" y="125.4473">ChessException(String : msg) : void</text><!--MD5=[18eee71c88ab61f27581b8cbdd3ef5ee]
+class Color--><rect codeLine="12" fill="#FEFECE" height="51.5266" id="Color" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="62.3" x="245.35" y="82.95"/><ellipse cx="264.355" cy="94.15" fill="#EB937F" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M267.2316,98.7 L261.8284,98.7 L261.8284,89.6 L267.2316,89.6 L267.2316,91.1969 L263.5456,91.1969 L263.5456,93.1 L266.8816,93.1 L266.8816,94.6969 L263.5456,94.6969 L263.5456,97.1141 L267.2316,97.1141 L267.2316,98.7 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="21" x="276.045" y="97.058">Color</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="246.05" x2="306.95" y1="105.35" y2="105.35"/><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="250.95" y="110.95"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="44.1" x="259.35" y="115.2973">BLACK : int</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="250.95" y="119.9133"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="43.4" x="259.35" y="124.2606">WHITE : int</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="246.05" x2="306.95" y1="128.8766" y2="128.8766"/><!--MD5=[06fe0d26a02cf34fca71e65f57506963]
+class ChessPosition--><rect codeLine="17" fill="#FEFECE" height="69.4531" id="ChessPosition" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="206.5" x="332.15" y="74.2"/><ellipse cx="404.075" cy="85.4" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M405.8031,89.5125 Q405.3984,89.7312 404.95,89.8406 Q404.5016,89.95 404.0094,89.95 Q402.2594,89.95 401.3297,88.7797 Q400.4109,87.6094 400.4109,85.4 Q400.4109,83.1906 401.3297,82.0203 Q402.2594,80.85 404.0094,80.85 Q404.5016,80.85 404.95,80.9594 Q405.4094,81.0687 405.8031,81.2875 L405.8031,83.2453 Q405.3656,82.8516 404.95,82.6656 Q404.5344,82.4687 404.0969,82.4687 Q403.1562,82.4687 402.675,83.2125 Q402.1937,83.9562 402.1937,85.4 Q402.1937,86.8547 402.675,87.5984 Q403.1562,88.3312 404.0969,88.3312 Q404.5344,88.3312 404.95,88.1453 Q405.3656,87.9594 405.8031,87.5547 L405.8031,89.5125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="56.7" x="418.425" y="88.308">ChessPosition</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="332.85" x2="537.95" y1="96.6" y2="96.6"/><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="337.75" y="102.2"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="49.7" x="346.15" y="106.5473">colum : char</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="337.75" y="111.1633"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="32.9" x="346.15" y="115.5106">row : int</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="332.85" x2="537.95" y1="120.1266" y2="120.1266"/><polygon fill="#FFFF44" points="339.85,124.3266,342.65,127.1266,339.85,129.9266,337.05,127.1266" style="stroke:#B38D22;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="83.3" x="346.15" y="130.0739">toPosition() : Position</text><polygon fill="#FFFF44" points="339.85,133.2898,342.65,136.0898,339.85,138.8898,337.05,136.0898" style="stroke:#B38D22;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="188.3" x="346.15" y="139.0372">fromPosition(position : Position) : ChessPosition</text><!--MD5=[86d147216f0f7234d36c7db21e693dc2]
+class ChessMatch--><rect codeLine="30" fill="#FEFECE" height="123.2328" id="ChessMatch" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="407.4" x="131.6" y="484.75"/><ellipse cx="307.125" cy="495.95" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M308.8531,500.0625 Q308.4484,500.2812 308,500.3906 Q307.5516,500.5 307.0594,500.5 Q305.3094,500.5 304.3797,499.3297 Q303.4609,498.1594 303.4609,495.95 Q303.4609,493.7406 304.3797,492.5703 Q305.3094,491.4 307.0594,491.4 Q307.5516,491.4 308,491.5094 Q308.4594,491.6187 308.8531,491.8375 L308.8531,493.7953 Q308.4156,493.4016 308,493.2156 Q307.5844,493.0187 307.1469,493.0187 Q306.2062,493.0187 305.725,493.7625 Q305.2437,494.5062 305.2437,495.95 Q305.2437,497.4047 305.725,498.1484 Q306.2062,498.8812 307.1469,498.8812 Q307.5844,498.8812 308,498.6953 Q308.4156,498.5094 308.8531,498.1047 L308.8531,500.0625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="50.4" x="321.475" y="498.858">ChessMatch</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="132.3" x2="538.3" y1="507.15" y2="507.15"/><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="137.2" y="512.75"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="34.3" x="145.6" y="517.0973">turn : int</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="137.2" y="521.7133"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="83.3" x="145.6" y="526.0606">currentPlayer : Color</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="137.2" y="530.6766"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="62.3" x="145.6" y="535.0239">check : boolean</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="137.2" y="539.6398"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="81.2" x="145.6" y="543.9872">checkMate : boolean</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="137.2" y="548.6031"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="136.5" x="145.6" y="552.9504">enPassantVulnerable : ChessPiece</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="137.2" y="557.5664"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="90.3" x="145.6" y="561.9137">promoted : chessPiece</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="132.3" x2="538.3" y1="566.5297" y2="566.5297"/><ellipse cx="139.3" cy="574.2297" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="107.8" x="145.6" y="576.477">getPieces() : ChessPiece[][]</text><ellipse cx="139.3" cy="583.193" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="234.5" x="145.6" y="585.4403">possibleMoves(sourcePosition : ChessPosition) : boolean[][]</text><ellipse cx="139.3" cy="592.1562" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="389.2" x="145.6" y="594.4036">performChessMove(sourcePosition : ChessPosition, targetPosition : ChessPosition) : ChessPosition</text><ellipse cx="139.3" cy="601.1195" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="193.9" x="145.6" y="603.3668">replacePromotedPiece(type : String) :ChessPiece</text><!--MD5=[76412a1b87b0f1c748604a3142aab9ae]
+class King--><rect codeLine="54" fill="#FEFECE" height="33.6" id="King" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="41.3" x="136.15" y="379.4"/><ellipse cx="146.65" cy="390.6" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M148.3781,394.7125 Q147.9734,394.9312 147.525,395.0406 Q147.0766,395.15 146.5844,395.15 Q144.8344,395.15 143.9047,393.9797 Q142.9859,392.8094 142.9859,390.6 Q142.9859,388.3906 143.9047,387.2203 Q144.8344,386.05 146.5844,386.05 Q147.0766,386.05 147.525,386.1594 Q147.9844,386.2687 148.3781,386.4875 L148.3781,388.4453 Q147.9406,388.0516 147.525,387.8656 Q147.1094,387.6687 146.6719,387.6687 Q145.7312,387.6687 145.25,388.4125 Q144.7687,389.1562 144.7687,390.6 Q144.7687,392.0547 145.25,392.7984 Q145.7312,393.5312 146.6719,393.5312 Q147.1094,393.5312 147.525,393.3453 Q147.9406,393.1594 148.3781,392.7547 L148.3781,394.7125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="18.9" x="156.45" y="393.508">King</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="136.85" x2="176.75" y1="401.8" y2="401.8"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="136.85" x2="176.75" y1="407.4" y2="407.4"/><!--MD5=[449cd079d44679d193659f94873ba755]
+class Bishop--><rect codeLine="55" fill="#FEFECE" height="33.6" id="Bishop" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="50.4" x="202.3" y="379.4"/><ellipse cx="212.8" cy="390.6" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M214.5281,394.7125 Q214.1234,394.9312 213.675,395.0406 Q213.2266,395.15 212.7344,395.15 Q210.9844,395.15 210.0547,393.9797 Q209.1359,392.8094 209.1359,390.6 Q209.1359,388.3906 210.0547,387.2203 Q210.9844,386.05 212.7344,386.05 Q213.2266,386.05 213.675,386.1594 Q214.1344,386.2687 214.5281,386.4875 L214.5281,388.4453 Q214.0906,388.0516 213.675,387.8656 Q213.2594,387.6687 212.8219,387.6687 Q211.8812,387.6687 211.4,388.4125 Q210.9187,389.1562 210.9187,390.6 Q210.9187,392.0547 211.4,392.7984 Q211.8812,393.5312 212.8219,393.5312 Q213.2594,393.5312 213.675,393.3453 Q214.0906,393.1594 214.5281,392.7547 L214.5281,394.7125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="28" x="222.6" y="393.508">Bishop</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="203" x2="252" y1="401.8" y2="401.8"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="203" x2="252" y1="407.4" y2="407.4"/><!--MD5=[f12c1f668f765232aff110b8f6a6681d]
+class Knight--><rect codeLine="56" fill="#FEFECE" height="33.6" id="Knight" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="50.4" x="277.2" y="379.4"/><ellipse cx="287.7" cy="390.6" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M289.4281,394.7125 Q289.0234,394.9312 288.575,395.0406 Q288.1266,395.15 287.6344,395.15 Q285.8844,395.15 284.9547,393.9797 Q284.0359,392.8094 284.0359,390.6 Q284.0359,388.3906 284.9547,387.2203 Q285.8844,386.05 287.6344,386.05 Q288.1266,386.05 288.575,386.1594 Q289.0344,386.2687 289.4281,386.4875 L289.4281,388.4453 Q288.9906,388.0516 288.575,387.8656 Q288.1594,387.6687 287.7219,387.6687 Q286.7812,387.6687 286.3,388.4125 Q285.8187,389.1562 285.8187,390.6 Q285.8187,392.0547 286.3,392.7984 Q286.7812,393.5312 287.7219,393.5312 Q288.1594,393.5312 288.575,393.3453 Q288.9906,393.1594 289.4281,392.7547 L289.4281,394.7125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="28" x="297.5" y="393.508">Knight</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="277.9" x2="326.9" y1="401.8" y2="401.8"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="277.9" x2="326.9" y1="407.4" y2="407.4"/><!--MD5=[af29ca247b3a3642f0fb478cea99ef78]
+class Pawn--><rect codeLine="57" fill="#FEFECE" height="33.6" id="Pawn" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="44.8" x="352.1" y="379.4"/><ellipse cx="362.6" cy="390.6" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M364.3281,394.7125 Q363.9234,394.9312 363.475,395.0406 Q363.0266,395.15 362.5344,395.15 Q360.7844,395.15 359.8547,393.9797 Q358.9359,392.8094 358.9359,390.6 Q358.9359,388.3906 359.8547,387.2203 Q360.7844,386.05 362.5344,386.05 Q363.0266,386.05 363.475,386.1594 Q363.9344,386.2687 364.3281,386.4875 L364.3281,388.4453 Q363.8906,388.0516 363.475,387.8656 Q363.0594,387.6687 362.6219,387.6687 Q361.6812,387.6687 361.2,388.4125 Q360.7187,389.1562 360.7187,390.6 Q360.7187,392.0547 361.2,392.7984 Q361.6812,393.5312 362.6219,393.5312 Q363.0594,393.5312 363.475,393.3453 Q363.8906,393.1594 364.3281,392.7547 L364.3281,394.7125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="22.4" x="372.4" y="393.508">Pawn</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="352.8" x2="396.2" y1="401.8" y2="401.8"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="352.8" x2="396.2" y1="407.4" y2="407.4"/><!--MD5=[b5524c1f1cf4f7aeecdc9b5af5b05d87]
+class Queen--><rect codeLine="58" fill="#FEFECE" height="33.6" id="Queen" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="49.7" x="421.75" y="379.4"/><ellipse cx="432.25" cy="390.6" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M433.9781,394.7125 Q433.5734,394.9312 433.125,395.0406 Q432.6766,395.15 432.1844,395.15 Q430.4344,395.15 429.5047,393.9797 Q428.5859,392.8094 428.5859,390.6 Q428.5859,388.3906 429.5047,387.2203 Q430.4344,386.05 432.1844,386.05 Q432.6766,386.05 433.125,386.1594 Q433.5844,386.2687 433.9781,386.4875 L433.9781,388.4453 Q433.5406,388.0516 433.125,387.8656 Q432.7094,387.6687 432.2719,387.6687 Q431.3312,387.6687 430.85,388.4125 Q430.3687,389.1562 430.3687,390.6 Q430.3687,392.0547 430.85,392.7984 Q431.3312,393.5312 432.2719,393.5312 Q432.7094,393.5312 433.125,393.3453 Q433.5406,393.1594 433.9781,392.7547 L433.9781,394.7125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="27.3" x="442.05" y="393.508">Queen</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="422.45" x2="470.75" y1="401.8" y2="401.8"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="422.45" x2="470.75" y1="407.4" y2="407.4"/><!--MD5=[6bd8cd731001ea389c78559e5d225136]
+class Rook--><rect codeLine="59" fill="#FEFECE" height="33.6" id="Rook" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="42.7" x="495.95" y="379.4"/><ellipse cx="506.45" cy="390.6" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M508.1781,394.7125 Q507.7734,394.9312 507.325,395.0406 Q506.8766,395.15 506.3844,395.15 Q504.6344,395.15 503.7047,393.9797 Q502.7859,392.8094 502.7859,390.6 Q502.7859,388.3906 503.7047,387.2203 Q504.6344,386.05 506.3844,386.05 Q506.8766,386.05 507.325,386.1594 Q507.7844,386.2687 508.1781,386.4875 L508.1781,388.4453 Q507.7406,388.0516 507.325,387.8656 Q506.9094,387.6687 506.4719,387.6687 Q505.5312,387.6687 505.05,388.4125 Q504.5687,389.1562 504.5687,390.6 Q504.5687,392.0547 505.05,392.7984 Q505.5312,393.5312 506.4719,393.5312 Q506.9094,393.5312 507.325,393.3453 Q507.7406,393.1594 508.1781,392.7547 L508.1781,394.7125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="20.3" x="516.25" y="393.508">Rook</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="496.65" x2="537.95" y1="401.8" y2="401.8"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="496.65" x2="537.95" y1="407.4" y2="407.4"/><!--MD5=[e6bdf53075e344485b42b304cbdaeae2]
+class BoardException--><rect codeLine="67" fill="#FEFECE" height="42.5633" id="BoardException" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="159.6" x="843.5" y="252.35"/><ellipse cx="887.075" cy="263.55" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M888.8031,267.6625 Q888.3984,267.8812 887.95,267.9906 Q887.5016,268.1 887.0094,268.1 Q885.2594,268.1 884.3297,266.9297 Q883.4109,265.7594 883.4109,263.55 Q883.4109,261.3406 884.3297,260.1703 Q885.2594,259 887.0094,259 Q887.5016,259 887.95,259.1094 Q888.4094,259.2187 888.8031,259.4375 L888.8031,261.3953 Q888.3656,261.0016 887.95,260.8156 Q887.5344,260.6187 887.0969,260.6187 Q886.1562,260.6187 885.675,261.3625 Q885.1937,262.1062 885.1937,263.55 Q885.1937,265.0047 885.675,265.7484 Q886.1562,266.4812 887.0969,266.4812 Q887.5344,266.4812 887.95,266.2953 Q888.3656,266.1094 888.8031,265.7047 L888.8031,267.6625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="66.5" x="901.425" y="266.458">BoardException</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="844.2" x2="1002.4" y1="274.75" y2="274.75"/><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="844.2" x2="1002.4" y1="280.35" y2="280.35"/><ellipse cx="851.2" cy="288.05" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="141.4" x="857.5" y="290.2973">BoardException(msg : String) : void</text><!--MD5=[a64a835c3d62471a77f615251fdde58a]
+class Position--><rect codeLine="71" fill="#FEFECE" height="60.4898" id="Position" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="173.6" x="645.4" y="243.6"/><ellipse cx="713.125" cy="254.8" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M714.8531,258.9125 Q714.4484,259.1312 714,259.2406 Q713.5516,259.35 713.0594,259.35 Q711.3094,259.35 710.3797,258.1797 Q709.4609,257.0094 709.4609,254.8 Q709.4609,252.5906 710.3797,251.4203 Q711.3094,250.25 713.0594,250.25 Q713.5516,250.25 714,250.3594 Q714.4594,250.4687 714.8531,250.6875 L714.8531,252.6453 Q714.4156,252.2516 714,252.0656 Q713.5844,251.8687 713.1469,251.8687 Q712.2062,251.8687 711.725,252.6125 Q711.2437,253.3562 711.2437,254.8 Q711.2437,256.2547 711.725,256.9984 Q712.2062,257.7312 713.1469,257.7312 Q713.5844,257.7312 714,257.5453 Q714.4156,257.3594 714.8531,256.9547 L714.8531,258.9125 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="32.2" x="727.475" y="257.708">Position</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="646.1" x2="818.3" y1="266" y2="266"/><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="651" y="271.6"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="32.9" x="659.4" y="275.9473">row : int</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="651" y="280.5633"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="46.9" x="659.4" y="284.9106">column : int</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="646.1" x2="818.3" y1="289.5266" y2="289.5266"/><ellipse cx="653.1" cy="297.2266" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="155.4" x="659.4" y="299.4739">serValues(row : int, column : int) : void</text><!--MD5=[9563755d011c5cec7ec66dc53565a59e]
+class Board--><rect codeLine="79" fill="#FEFECE" height="105.3062" id="Board" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="187.6" x="645.4" y="493.85"/><ellipse cx="723.975" cy="505.05" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M725.7031,509.1625 Q725.2984,509.3812 724.85,509.4906 Q724.4016,509.6 723.9094,509.6 Q722.1594,509.6 721.2297,508.4297 Q720.3109,507.2594 720.3109,505.05 Q720.3109,502.8406 721.2297,501.6703 Q722.1594,500.5 723.9094,500.5 Q724.4016,500.5 724.85,500.6094 Q725.3094,500.7187 725.7031,500.9375 L725.7031,502.8953 Q725.2656,502.5016 724.85,502.3156 Q724.4344,502.1187 723.9969,502.1187 Q723.0562,502.1187 722.575,502.8625 Q722.0937,503.6062 722.0937,505.05 Q722.0937,506.5047 722.575,507.2484 Q723.0562,507.9812 723.9969,507.9812 Q724.4344,507.9812 724.85,507.7953 Q725.2656,507.6094 725.7031,507.2047 L725.7031,509.1625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="24.5" x="738.325" y="507.958">Board</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="646.1" x2="832.3" y1="516.25" y2="516.25"/><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="651" y="521.85"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="37.1" x="659.4" y="526.1973">rows : int</text><rect fill="none" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="651" y="530.8133"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="51.1" x="659.4" y="535.1606">columns : int</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="646.1" x2="832.3" y1="539.7766" y2="539.7766"/><ellipse cx="653.1" cy="547.4766" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="145.6" x="659.4" y="549.7239">piece(row : int, columns : int) : Piece</text><ellipse cx="653.1" cy="556.4398" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="126" x="659.4" y="558.6872">piece(position : Position) : Piece</text><ellipse cx="653.1" cy="565.4031" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="142.8" x="659.4" y="567.6504">placePiece(position : Position) : void</text><ellipse cx="653.1" cy="574.3664" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="156.8" x="659.4" y="576.6137">removePiece(position : Position) : Piece</text><ellipse cx="653.1" cy="583.3297" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="169.4" x="659.4" y="585.577">positionExists(position : Position) : boolean</text><ellipse cx="653.1" cy="592.293" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="169.4" x="659.4" y="594.5403">thereIsAPiece(position : Position) : boolean</text><!--MD5=[e05bacf3ff4416a0580578814d41bbf6]
+class Piece--><rect codeLine="93" fill="#FEFECE" height="69.4531" id="Piece" rx="2.45" ry="2.45" style="stroke:#A80036;stroke-width:1.0499999999999998;" width="161.7" x="651.35" y="361.55"/><ellipse cx="718.375" cy="372.75" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#A80036;stroke-width:0.6999999999999998;"/><path d="M720.1031,376.8625 Q719.6984,377.0812 719.25,377.1906 Q718.8016,377.3 718.3094,377.3 Q716.5594,377.3 715.6297,376.1297 Q714.7109,374.9594 714.7109,372.75 Q714.7109,370.5406 715.6297,369.3703 Q716.5594,368.2 718.3094,368.2 Q718.8016,368.2 719.25,368.3094 Q719.7094,368.4187 720.1031,368.6375 L720.1031,370.5953 Q719.6656,370.2016 719.25,370.0156 Q718.8344,369.8187 718.3969,369.8187 Q717.4562,369.8187 716.975,370.5625 Q716.4937,371.3062 716.4937,372.75 Q716.4937,374.2047 716.975,374.9484 Q717.4562,375.6812 718.3969,375.6812 Q718.8344,375.6812 719.25,375.4953 Q719.6656,375.3094 720.1031,374.9047 L720.1031,376.8625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="21.7" x="732.725" y="375.658">Piece</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="652.05" x2="812.35" y1="383.95" y2="383.95"/><polygon fill="none" points="659.05,388.15,661.85,390.95,659.05,393.75,656.25,390.95" style="stroke:#B38D22;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="70" x="665.35" y="393.8973">position : Position</text><line style="stroke:#A80036;stroke-width:1.0499999999999998;" x1="652.05" x2="812.35" y1="398.5133" y2="398.5133"/><ellipse cx="659.05" cy="406.2133" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="114.1" x="665.35" y="408.4606">possibleMoves() : boolean[][]</text><ellipse cx="659.05" cy="415.1766" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="115.5" x="665.35" y="417.4239">(position : Position) : boolean</text><ellipse cx="659.05" cy="424.1398" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="7.7" lengthAdjust="spacing" textLength="143.5" x="665.35" y="426.3872">isThereAnyPossibleMove() : boolean</text><!--MD5=[b93462fa6acfb7b4679946fe6412f2ae]
+link Color to ChessPosition--><!--MD5=[7f153020cf24fd250bc15f9c58c44b02]
+link Color to ChessPiece--><!--MD5=[ca2e3267890391f0f02c37b6d6ce6d31]
+link ChessPiece to ChessMatch--><!--MD5=[6f012f68e6c6718bfb137a29f37315f6]
+reverse link ChessPiece to King--><path d="M211.708,325.892 C203.91,331.814 196.441,338.121 189.7,344.75 C179.438,354.837 170.737,368.662 164.871,379.337 " fill="none" id="ChessPiece-backto-King" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="none" points="209.097,321.734,223.314,317.499,214.837,329.679,209.097,321.734" style="stroke:#454645;stroke-width:0.6999999999999998;"/><!--MD5=[0bb4114731b9507ae0d3d6cb261796b6]
+reverse link ChessPiece to Bishop--><path d="M268.163,329.756 C257.033,347.753 245.518,366.373 237.594,379.183 " fill="none" id="ChessPiece-backto-Bishop" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="none" points="264.04,327.11,275.569,317.779,272.377,332.262,264.04,327.11" style="stroke:#454645;stroke-width:0.6999999999999998;"/><!--MD5=[5d4b1102a62472437697011858acdefa]
+reverse link ChessPiece to Knight--><path d="M302.4,331.821 C302.4,349.174 302.4,366.863 302.4,379.183 " fill="none" id="ChessPiece-backto-Knight" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="none" points="297.5,331.779,302.4,317.779,307.3,331.779,297.5,331.779" style="stroke:#454645;stroke-width:0.6999999999999998;"/><!--MD5=[4da6cc91764e3dbd53d5bebb745cae30]
+reverse link ChessPiece to Pawn--><path d="M335.51,330.015 C346.178,347.935 357.196,366.436 364.784,379.183 " fill="none" id="ChessPiece-backto-Pawn" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="none" points="331.177,332.311,328.223,317.779,339.598,327.299,331.177,332.311" style="stroke:#454645;stroke-width:0.6999999999999998;"/><!--MD5=[2a92b4d4c022e41d3eb8c4daa7dc3c49]
+reverse link ChessPiece to Queen--><path d="M386.617,326.018 C394.401,331.975 401.933,338.261 408.8,344.75 C419.657,355.012 429.646,368.697 436.625,379.267 " fill="none" id="ChessPiece-backto-Queen" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="none" points="383.446,329.77,375.074,317.527,389.256,321.874,383.446,329.77" style="stroke:#454645;stroke-width:0.6999999999999998;"/><!--MD5=[3896535a078649ecb6d8917c4410e82c]
+reverse link ChessPiece to Rook--><path d="M426.699,310.758 C446.95,319.921 466.795,331.135 483.7,344.75 C495.222,354.032 504.189,368.34 509.95,379.4 " fill="none" id="ChessPiece-backto-Rook" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="none" points="424.641,315.21,413.721,305.179,428.512,306.208,424.641,315.21" style="stroke:#454645;stroke-width:0.6999999999999998;"/><!--MD5=[777f991ddda6a554aa495b63684badfb]
+link King to ChessMatch--><path codeLine="60" d="M171.773,413.231 C177.254,418.964 183.61,425.348 189.7,430.85 C209.02,448.294 230.664,466.172 251.237,482.475 " fill="none" id="King-to-ChessMatch" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="#454645" points="254.002,484.659,250.7908,478.5583,251.2544,482.4909,247.3218,482.9545,254.002,484.659" style="stroke:#454645;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.1" lengthAdjust="spacing" textLength="61.6" x="225.4" y="460.9968">1 chessMatch</text><!--MD5=[0f31926eaf6245201cc7b34dd6c18b65]
+link Pawn to ChessMatch--><path codeLine="61" d="M370.23,413.105 C365.897,429.534 358.911,456.05 352.324,481.054 " fill="none" id="Pawn-to-ChessMatch" style="stroke:#454645;stroke-width:0.6999999999999998;"/><polygon fill="#454645" points="351.351,484.736,355.659,479.3535,352.2398,481.3507,350.2425,477.9315,351.351,484.736" style="stroke:#454645;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.1" lengthAdjust="spacing" textLength="61.6" x="360.5" y="460.9968">1 chessMatch</text><!--MD5=[ce7bcab1817931c8fa12682a4581fe49]
+link Position to Piece--><!--MD5=[0c5bf33641975396ee6c9cb374a7d6e6]
+link Piece to Board--><path codeLine="91" d="M733.803,431.025 C734.678,449.554 735.777,472.85 736.75,493.591 " fill="none" id="Piece-Board" style="stroke:#454645;stroke-width:0.6999999999999998;"/><ellipse cx="689.9284" cy="441.9993" fill="#000000" rx="1.75" ry="1.75" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="9.1" lengthAdjust="spacing" textLength="35.7" x="695.1784" y="445.1031">- pieces</text><text fill="#000000" font-family="sans-serif" font-size="9.1" lengthAdjust="spacing" textLength="40.6" x="694.0527" y="486.1803">1 - board</text><!--MD5=[01fc8f61e4966e009aaf7df4a850a9fa]
+link ChessPiece to Piece--><path codeLine="100" d="M413.924,305.823 C483.308,325.374 571.571,350.245 637.539,368.83 " fill="none" id="ChessPiece-to-Piece" style="stroke:#454645;stroke-width:2.0999999999999996;"/><polygon fill="none" points="638.911,364.126,651.056,372.638,636.251,373.555,638.911,364.126" style="stroke:#454645;stroke-width:2.0999999999999996;"/><!--MD5=[80f8a17b7bbf27078d1c912e1a6423a9]
+link ChessMatch to Board--><path codeLine="101" d="M547.428,546.35 C547.428,546.35 606.893,546.35 636.258,546.35 " fill="none" id="ChessMatch-Board" style="stroke:#454645;stroke-width:3.499999999999999;"/><polygon fill="#454645" points="645.365,546.35,639.065,543.55,641.865,546.35,639.065,549.15,645.365,546.35" style="stroke:#454645;stroke-width:3.499999999999999;"/><line style="stroke:#454645;stroke-width:3.499999999999999;" x1="641.865" x2="636.265" y1="546.35" y2="546.35"/><polygon fill="#454645" points="539.028,546.35,543.228,549.15,547.428,546.35,543.228,543.55,539.028,546.35" style="stroke:#454645;stroke-width:3.499999999999999;"/><!--MD5=[768ee557f1f9366c0a4602e30bf8e5c3]
+link chessLayer to boardLayer--><!--MD5=[089d562d72f6c56f0f770555c0e9f436]
+@startuml
+!theme vibrant
+'https://plantuml.com/class-diagram
+'https://plantuml.com/guide
+
+rectangle {
+    rectangle "Chess layer" as chessLayer {
+        rectangle {
+            class ChessException {
+                + ChessException(String : msg) : void
+            }
+
+            enum Color {
+                - BLACK : int
+                - WHITE : int
+            }
+
+            class ChessPosition {
+                - colum : char
+                - row : int
+                # toPosition() : Position
+                # fromPosition(position : Position) : ChessPosition
+            }
+
+            Color -r[hidden] ChessPosition
+        }
+
+        Color -d[hidden]- ChessPiece
+
+        together "x" as x{
+            class ChessMatch {
+                - turn : int
+                - currentPlayer : Color
+                - check : boolean
+                - checkMate : boolean
+                - enPassantVulnerable : ChessPiece
+                - promoted : chessPiece
+                + getPieces() : ChessPiece[][]
+                + possibleMoves(sourcePosition : ChessPosition) : boolean[][]
+                + performChessMove(sourcePosition : ChessPosition, targetPosition : ChessPosition) : ChessPosition
+                + replacePromotedPiece(type : String) :ChessPiece
+            }
+
+            ChessMatch -u[hidden]- ChessPiece
+
+            class ChessPiece {
+                - color : Color
+                - moveCount : int
+                + getChessPosition() : ChessPosition
+                # isThereOpponentPiece(position : Position) : boolean
+                # increaseMoveCount() : void
+                # decreaseMoveCount() : void
+            }
+
+            class King extends ChessPiece
+            class Bishop extends ChessPiece
+            class Knight extends ChessPiece
+            class Pawn extends ChessPiece
+            class Queen extends ChessPiece
+            class Rook extends ChessPiece
+            King - -> ChessMatch : 1 chessMatch
+            Pawn - -> ChessMatch : 1 chessMatch
+        }
+    }
+
+        rectangle "Board layer" as boardLayer {
+            rectangle " " as r {
+                class BoardException {
+                    + BoardException(msg : String) : void
+                }
+
+                class Position {
+                    - row : int
+                    - column : int
+                    + serValues(row : int, column : int) : void
+                }
+            }
+
+            together {
+                class Board {
+                    - rows : int
+                    - columns : int
+                    + piece(row : int, columns : int) : Piece
+                    + piece(position : Position) : Piece
+                    + placePiece(position : Position) : void
+                    + removePiece(position : Position) : Piece
+                    + positionExists(position : Position) : boolean
+                    + thereIsAPiece(position : Position) : boolean
+                }
+
+                Position -d[hidden]- Piece
+                Board "1 - board" -u- "* - pieces" Piece
+
+                class Piece {
+                    # position : Position
+                    + possibleMoves() : boolean[][]
+                    + (position : Position) : boolean
+                    + isThereAnyPossibleMove() : boolean
+                }
+            }
+            ChessPiece -[thickness=3]-|> Piece
+            ChessMatch *-r[thickness=5]-> Board
+        }
+        chessLayer -[hidden]- boardLayer
+}
+@enduml
+
+@startuml
+skinparam BackgroundColor FFFFFF
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 454645
+skinparam FontColor 454645
+skinparam SequenceLifeLineBorderColor 696969
+skinparam SequenceGroupHeaderFontColor 454645
+skinparam SequenceGroupFontColor 696969
+skinparam SequenceGroupBorderColor 696969
+skinparam SequenceGroupBorderThickness 1
+
+skinparam sequenceDivider {
+    BorderColor 454645
+    BorderThickness 1
+    FontColor 454645
+}
+
+skinparam participant {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFFFFF
+    BorderThickness 1.5
+}
+
+skinparam database {
+    BackgroundColor 00FFFF
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam entity {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam note {
+    BackgroundColor 7FFFD4
+    BorderColor 454645
+    FontColor 454645
+    BorderThickness 1.5
+}
+
+skinparam actor {
+    BackgroundColor 454645
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam boundary {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam control {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam collections {
+    BackgroundColor FF5F42
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam queue {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFF
+    BorderThickness 1.5
+}
+
+rectangle {
+    rectangle "Chess layer" as chessLayer {
+        rectangle {
+            class ChessException {
+                + ChessException(String : msg) : void
+            }
+
+            enum Color {
+                - BLACK : int
+                - WHITE : int
+            }
+
+            class ChessPosition {
+                - colum : char
+                - row : int
+                # toPosition() : Position
+                # fromPosition(position : Position) : ChessPosition
+            }
+
+            Color -r[hidden] ChessPosition
+        }
+
+        Color -d[hidden]- ChessPiece
+
+        together "x" as x{
+            class ChessMatch {
+                - turn : int
+                - currentPlayer : Color
+                - check : boolean
+                - checkMate : boolean
+                - enPassantVulnerable : ChessPiece
+                - promoted : chessPiece
+                + getPieces() : ChessPiece[][]
+                + possibleMoves(sourcePosition : ChessPosition) : boolean[][]
+                + performChessMove(sourcePosition : ChessPosition, targetPosition : ChessPosition) : ChessPosition
+                + replacePromotedPiece(type : String) :ChessPiece
+            }
+
+            ChessMatch -u[hidden]- ChessPiece
+
+            class ChessPiece {
+                - color : Color
+                - moveCount : int
+                + getChessPosition() : ChessPosition
+                # isThereOpponentPiece(position : Position) : boolean
+                # increaseMoveCount() : void
+                # decreaseMoveCount() : void
+            }
+
+            class King extends ChessPiece
+            class Bishop extends ChessPiece
+            class Knight extends ChessPiece
+            class Pawn extends ChessPiece
+            class Queen extends ChessPiece
+            class Rook extends ChessPiece
+            King - -> ChessMatch : 1 chessMatch
+            Pawn - -> ChessMatch : 1 chessMatch
+        }
+    }
+
+        rectangle "Board layer" as boardLayer {
+            rectangle " " as r {
+                class BoardException {
+                    + BoardException(msg : String) : void
+                }
+
+                class Position {
+                    - row : int
+                    - column : int
+                    + serValues(row : int, column : int) : void
+                }
+            }
+
+            together {
+                class Board {
+                    - rows : int
+                    - columns : int
+                    + piece(row : int, columns : int) : Piece
+                    + piece(position : Position) : Piece
+                    + placePiece(position : Position) : void
+                    + removePiece(position : Position) : Piece
+                    + positionExists(position : Position) : boolean
+                    + thereIsAPiece(position : Position) : boolean
+                }
+
+                Position -d[hidden]- Piece
+                Board "1 - board" -u- "* - pieces" Piece
+
+                class Piece {
+                    # position : Position
+                    + possibleMoves() : boolean[][]
+                    + (position : Position) : boolean
+                    + isThereAnyPossibleMove() : boolean
+                }
+            }
+            ChessPiece -[thickness=3]-|> Piece
+            ChessMatch *-r[thickness=5]-> Board
+        }
+        chessLayer -[hidden]- boardLayer
+}
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 15:19:58 BRT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
