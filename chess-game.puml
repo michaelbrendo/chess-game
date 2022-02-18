@@ -1,0 +1,87 @@
+@startuml
+'https://plantuml.com/class-diagram
+'https://plantuml.com/guide
+
+'abstract class AbstractList
+'abstract AbstractCollection
+'interface List
+'interface Collection
+'
+'List <|-- AbstractList
+'Collection <|-- AbstractCollection
+'
+'Collection <|- List
+'AbstractCollection <|- AbstractList
+'AbstractList <|-- ArrayList
+'
+'class ArrayList {
+'Object[] elementData
+'size()
+'}
+
+
+
+rectangle Chess-layer {
+
+    together {
+        rectangle {
+            Color -[hidden]> ChessPosition
+
+            class ChessException {
+                + ChessException(String : msg) : void
+            }
+
+            enum Color {
+                - BLACK : int
+                - WHITE : int
+            }
+
+            class ChessPosition {
+                - colum : char
+                - row : int
+                # toPosition() : Position
+                # fromPosition(position : Position) : ChessPosition
+            }
+        }
+    }
+
+    ChessException -[hidden]--> ChessMatch
+    ChessMatch --> ChessPiece
+
+    together k2 {
+        class ChessMatch {
+            - turn : int
+            - currentPlayer : Color
+            - check : boolean
+            - checkMate : boolean
+            - enPassantVulnerable : ChessPiece
+            - promoted : chessPiece
+            + getPieces() : ChessPiece[][]
+            + possibleMoves(sourcePosition : ChessPosition) : boolean[][]
+            + performChessMove(sourcePosition : ChessPosition, targetPosition : ChessPosition) : ChessPosition
+            + replacePromotedPiece(type : String) :ChessPiece
+        }
+
+        ChessMatch -[hidden]-> ChessPiece
+
+        class ChessPiece extends Piece {
+            - color : Color
+            - moveCount : int
+            + getChessPosition() : ChessPosition
+            # isThereOpponentPiece(position : Position) : boolean
+            # increaseMoveCount() : void
+            # decreaseMoveCount() : void
+        }
+
+        class King extends ChessPiece
+        class Bishop extends ChessPiece
+        class Knight extends ChessPiece
+        class Pawn extends ChessPiece
+        class Queen extends ChessPiece
+        class Rook extends ChessPiece
+        King --> ChessMatch : 1 chessMatch
+        Pawn --> ChessMatch : 1 chessMatch
+
+    }
+}
+@enduml
