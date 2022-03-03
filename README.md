@@ -7,6 +7,10 @@ Create a chess game by applying the knowledge of overloading, constructor, encap
 enumeration, composition, inheritance, polymorphism, upcasting, down-casting, overlay,
 exception handling, among other topics.
 
+## How to run the chess-game
+TODO
+***
+
 ## Technologies:
 - [Jabba/Java v11](https://github.com/shyiko/jabba)
 - UML
